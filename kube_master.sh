@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Host File Entries
+echo "10.20.5.10   ub01.k8s.local ub01" | sudo tee -a /etc/hosts
+echo "10.20.5.11   ub02.k8s.local ub02" | sudo tee -a /etc/hosts
+echo "10.20.5.12   ub03.k8s.local ub03" | sudo tee -a /etc/hosts
+
+
 # Disable swap
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 sudo swapoff -a
