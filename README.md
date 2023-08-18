@@ -659,7 +659,6 @@ What's interesting is that you're going to switch back over to your host and you
 ls -la /mnt/pv-volume
 cat /mnt/pv-volume/helloworld.txt
 ```
-```
 
 
 
