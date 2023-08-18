@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache
+  labels:
+    env: dev
+spec:
+  containers:
+  - name: apache
+    image: httpd:latest
+  tolerations:
+  - key: "gpu"
+    value: "amd"
+    effect: "NoSchedule"
+    operator: "Equal"
+
+
+  ##This would mean that the pod would never be scheduled on node1
+  ## kubectl taint nodes node1 size=small:Noschedule 
+  
+
+
