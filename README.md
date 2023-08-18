@@ -661,6 +661,5 @@ cat /mnt/pv-volume/helloworld.txt
 ```
 ```
 
-This markdown document captures the details of the storage class, persistent volume, persistent volume claim, and pod configuration. It also includes some example commands you might run within your pod and on the host. Feel free to modify as needed!
 
 
