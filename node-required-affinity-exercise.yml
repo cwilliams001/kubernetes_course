@@ -22,3 +22,5 @@ spec:
 
 
 ## kubectl label node kube-node-01 size=large
+
+## kubectl label node kube-node-02 size-
